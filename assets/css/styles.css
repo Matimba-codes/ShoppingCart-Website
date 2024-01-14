@@ -1,0 +1,276 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #403F3B;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #F7FBFF;
+  color: none;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+}
+
+.logo img {
+  height: 4rem
+}
+
+nav {
+  background-color: none;
+  color: none;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu a {
+  display: block;
+  padding: 1rem 2rem;
+  color: #403F3B;
+  text-decoration: none;
+}
+
+.menu li:hover > a {
+  background-color: #FEFBEA;
+}
+
+.submenu li:hover > a {
+  background-color: #E6E3D3;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #FEFBEA;
+}
+
+.submenu li {
+  width: 100%;
+}
+
+.submenu a {
+  padding: 1rem 2rem;
+}
+
+.menu li:hover > .submenu {
+  display: block;
+}
+
+.productSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.product {
+  text-align: center;
+  margin: 20px;
+}
+
+.product img{
+  height: 15rem;
+  width: 12rem;
+}
+
+.purchaseButton {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+#cartButton {
+  float: right;
+  margin-right: 20px;
+  padding: 10px;
+  background-color: #f2f2f2;
+  text-decoration: none;
+}
+
+#cartButton:hover {
+  background-color: #ddd;
+}
+
+main {
+  padding: 2rem;
+}
+
+.hero {
+  background-color: #92A1B3;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 60rem;
+  margin: 0 auto;
+}
+
+.hero h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background-color: #403F3B;
+  color: #F7FBFF;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4rem;
+}
+
+.shopcontainer {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100vh;
+  
+}
+
+.shopsection {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  transition: flex .4s ease;
+  position: relative;
+}
+
+.shopsection .shopoverlay {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  transition: background-color .8s ease;
+}
+
+.shopsection .shopcontent {
+  z-index: 2;
+}
+
+.shopsection:hover {
+  flex: 2;
+}
+
+.shopsection:hover .shopoverlay {
+  background-color: rgba(0, 0, 0, 0.95);
+}
+
+#shopclothing {
+  background-image: url(https://www.naceweb.org/uploadedImages/images/2020/feature/will-career-clothes-closets-be-available-in-the-fall.jpg);
+}
+
+
+#shopaccessories {
+  background-image: url(https://franchiseindia.s3.ap-south-1.amazonaws.com/uploads/content/fi/art/5b69706d6655d.jpg);
+}
+
+#shopshoes {
+  background-image: url(https://i.pinimg.com/originals/2a/35/d3/2a35d362109ad7d8635d14d149496834.jpg);
+}
+
+div.scroll-container {
+  background-color: #92A1B3;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 0rem;
+}
+
+div.scroll-container img {
+  height: 20rem;
+  width: 20rem;
+  padding: 1rem;
+}
+
+#indexbanner {
+  width:100%;
+  height: 20rem;
+}
+
+.sales {
+  column-count: 3;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.sales img {
+  display: block;
+  width:30rem;
+  height: 40rem;
+  padding: 1rem
+}
+
+.features {
+  column-count: 3;
+  margin-top: 2rem;
+}
+
+.feature img {
+  display: block;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.about_feature {
+  margin-top: 2rem;
+  padding-bottom: 5rem;
+  padding-top: 5rem;
+}
+
+.about_card {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  height: auto;
+}
+
+.about_card{ text-align: center; }
+
+footer {
+  background-color: #F7FBFF;
+  color: #403F3B;
+  padding: 1rem;
+  text-align: center;
+}
+
+.social img {
+  height: 2rem;
+  width: 2rem;
+}
